@@ -1,0 +1,19 @@
+{
+  "name": "spottedbot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node ./bot.js",
+    "dev": "nodemon ./bot.js"
+  },
+  "keywords": [],
+  "author": "bearFromMars",
+  "license": "ISC",
+  "dependencies": {
+    "discord-rpc": "^4.0.1",
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
