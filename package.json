@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "bot.js",
   "scripts": {
-    "start": "node ./src/bot.js",
-    "dev": "nodemon ./src/bot.js"
+    "start": "node ./bot.js",
+    "dev": "nodemon ./bot.js"
   },
   "keywords": [],
   "author": "bearFromMars",
