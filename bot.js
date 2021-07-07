@@ -73,7 +73,7 @@ client.on('message', function(message) {
     }
 });
 
-client.login(DISCORDJS_BOT_TOKEN);
+client.login(procces.env.DISCORDJS_BOT_TOKEN);
 
 client.on('error',(err) => console.log(err))
 
