@@ -45,10 +45,10 @@ client.on("message", function(message) {
 
 // Snarky Stuff
 client.on('message', function(message) {
-    if (message.content.includes('I watch spot get sprayed')) {
+    if (message.content.includes('bro')) {
         console.log('shower')
         if (message.content.length <=32)  {
-            message.channel.send('Haha he was a bad cat, wait I thought he was a rabbit') && client.on("error", () => { client.login(token) });
+            message.channel.send('bruh') && client.on("error", () => { client.login(token) });
     } else if (message.content.includes('Spot'))  {
         if (message.content.length <=32)  {
             message.channel.send('SpotNotFound more like SpotWasHacked, I own the server now') && client.on("error", () => { client.login(token) });
@@ -58,10 +58,10 @@ client.on('message', function(message) {
 });
 
 client.on('message', function(message) {
-    if (message.content.includes('I watch bear swim') && message.content.startsWith('I', 'watch')) {
+    if (message.content.includes('rolling') && message.content.startsWith('I', 'watch')) {
         console.log('bear shower')
         if (message.content.length <=32) {
-            message.channel.send('He be rollin in the lake!') && client.on("error", () => { client.login(token) });
+            message.channel.send('WATCHU KNOW BOUT ROLLIN DOWN IN THE DEEP') && client.on("error", () => { client.login(token) });
             client.user.setActivity("Bear take a shower!", { type: 'WATCHING' });
         } else null
     }
@@ -71,6 +71,24 @@ client.on('message', function(message) {
     if (message.member.id == '307677300730757120') {
         message.member.roles.add('855607072502579250');
     }
+});
+
+client.on('message', function(message) {
+    if ((message.author == '307677300730757120') && (message.content.includes('Bot kill --user'))) {
+        console.log('help')
+        if (message.content.length <=32) {
+            message.channel.send('WATCHU KNOW BOUT ROLLIN DOWN IN THE DEEP') && client.on("error", () => { client.login(token) });
+            client.user.setActivity("monke", { type: 'WATCHING' });
+        } else null
+    }
+});
+
+client.on('message', function(message) {
+        if(message.author.roles !== '854978420286554112' && (message.content.length <=32)) {
+            if(message.content.startsWith('sb!ban')) {
+        message.channel.send(message.content.replace('sb!ban ', 'BANNED!'))
+        }
+        } else return message.channel.send('You don\'t have permission.')
 });
 
 client.login(process.env.DISCORDJS_BOT_TOKEN);
