@@ -88,7 +88,7 @@ client.on('message', function(message) {
             if(message.content.startsWith('sb!ban')) {
         message.channel.send(message.content.replace('sb!ban ', 'BANNED!'))
             }
-        } else if((message.content.includes !== 'sb!ban') && message.content.length <=32) return message.channel.send('You don\'t have permission.')
+        } else if((message.content.startsWith('sb!ban')) && message.content.length <=32) { message.channel.send('You don\'t have permission.') };
 });
 
 client.login(process.env.DISCORDJS_BOT_TOKEN);
