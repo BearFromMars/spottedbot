@@ -74,12 +74,11 @@ client.on('message', function(message) {
 });
 
 client.on('message', function(message) {
-    if ((message.author == '307677300730757120') && (message.content.includes('Bot kill --user'))) {
+    if ((message.author == '307677300730757120') && (message.content.includes('Bot kill --user')) && message.content.length <=32) {
         console.log('help')
-        if (message.content.length <=32) {
+            console.log('pog')
             message.channel.send('WATCHU KNOW BOUT ROLLIN DOWN IN THE DEEP') && client.on("error", () => { client.login(token) });
             client.user.setActivity("monke", { type: 'WATCHING' });
-        } else null
     }
 });
 
