@@ -84,10 +84,10 @@ client.on('message', function(message) {
 });
 
 client.on('message', function(message) {
-        if(message.author.roles !== '854978420286554112' && (message.content.length <=32)) {
+        if(message.author.roles !== '854978420286554112' && (message.content.length <=32) && message.content.startsWith('sb!ban')) {
             if(message.content.startsWith('sb!ban')) {
         message.channel.send(message.content.replace('sb!ban ', 'BANNED!'))
-        }
+            }
         } else return message.channel.send('You don\'t have permission.')
 });
 
