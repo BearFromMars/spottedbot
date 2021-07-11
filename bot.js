@@ -90,6 +90,12 @@ client.on('message', function(message) {
         } else if((message.content.startsWith('sb!ban')) && message.content.length <=32) { message.channel.send('You don\'t have permission.') };
 });
 
+client.on('message', function(message) {
+    if(message.content.startsWith('sb!gilbert') && (message.content.length <=32)) {
+        message.channel.send('https://cdn.discordapp.com/attachments/855199911812792332/863669362933628948/jesusdog.jpg')
+    } else return null
+});
+
 client.login(process.env.DISCORDJS_BOT_TOKEN);
 
 client.on('error',(err) => console.log(err))
