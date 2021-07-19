@@ -1,2 +1,4 @@
 # spottedbot
-its a bunny bot
+Bot for the Spotted Trouble Den. Uses Node and Discord.js
+
+-_-
